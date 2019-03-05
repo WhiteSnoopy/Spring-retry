@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxTotal" value="200"/>
+        <property name="maxIdle" value="30"/>
+        <property name="maxWaitMillis" value="30000"/>
+        <property name="testOnBorrow"
+                  value="false"/><!-- 向调用者输出“链接”资源时，是否检测是有有效，如果无效则从连接池中移除，并尝试获取继续获取。设为true，一个挂都不能用 -->
+        <property name="testOnReturn" value="true"/><!-- 向连接池“归还”链接时，是否检测“链接”对象的有效性。 -->
+    </bean>
+
+    <bean id="jedisCluster" class="redis.clients.jedis.JedisCluster">
+        <constructor-arg index="0">
+            <set>
+                <bean class="redis.clients.jedis.HostAndPort">
+                    <constructor-arg index="0" value="47.94.252.20"/>
+                    <constructor-arg index="1" value="8001"/>
+                </bean>
+            </set>
+        </constructor-arg>
+        <constructor-arg index="1" ref="jedisPoolConfig"/>
+    </bean>
+
+    <bean id="jedisClusterConnection" class="org.springframework.data.redis.connection.jedis.JedisClusterConnection">
+        <constructor-arg index="0" ref="jedisCluster"/>
+    </bean>
+</beans>
