@@ -1,6 +1,6 @@
-package com.netease.mail.retry.meta;
+package com.chan.retry.meta;
 
-import com.netease.mail.retry.constant.ResponseCode;
+import com.chan.retry.constant.ResponseCode;
 
 /**
  * ajax请求返回结果封装

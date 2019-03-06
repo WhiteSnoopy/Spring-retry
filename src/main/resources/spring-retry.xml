@@ -77,7 +77,7 @@
                 <prop key="number_format">0.##########</prop>
                 <prop key="defaultEncoding">UTF-8</prop>
                 <prop key="template_exception_handler">
-                    com.netease.mail.retry.exception.FreemarkerExceptionHandler
+                    com.chan.retry.exception.FreemarkerExceptionHandler
                 </prop>
             </props>
         </property>

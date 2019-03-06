@@ -1,4 +1,4 @@
-package com.netease.mail.retry.controller;
+package com.chan.retry.controller;
 
 import org.apache.commons.lang.exception.ExceptionUtils;
 import org.slf4j.Logger;
@@ -6,8 +6,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.netease.mail.retry.constant.ResponseCode;
-import com.netease.mail.retry.meta.AjaxResult;
+import com.chan.retry.constant.ResponseCode;
+import com.chan.retry.meta.AjaxResult;
 
 public abstract class BaseAjaxController {
     private Logger logger = LoggerFactory.getLogger(BaseAjaxController.class);

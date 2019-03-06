@@ -1,10 +1,10 @@
-package com.netease.mail.retry.meta;
+package com.chan.retry.meta;
 
 import java.util.LinkedHashMap;
 
 import org.springframework.util.Assert;
 
-import com.netease.mail.retry.constant.ResponseCode;
+import com.chan.retry.constant.ResponseCode;
 
 /**
  * json返回结果封装

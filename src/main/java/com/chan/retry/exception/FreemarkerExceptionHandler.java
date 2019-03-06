@@ -1,4 +1,4 @@
-package com.netease.mail.retry.exception;
+package com.chan.retry.exception;
 
 import java.io.Writer;
 

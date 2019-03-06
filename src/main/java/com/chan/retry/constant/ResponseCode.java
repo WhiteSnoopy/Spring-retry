@@ -1,4 +1,4 @@
-package com.netease.mail.retry.constant;
+package com.chan.retry.constant;
 
 /**
  * @author chanyun

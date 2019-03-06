@@ -1,7 +1,7 @@
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.netease.mail.retry.service.RetryService;
+import com.chan.retry.service.RetryService;
 
 /**
  * @author chanyun

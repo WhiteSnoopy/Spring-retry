@@ -1,4 +1,4 @@
-package com.netease.mail.retry.service;
+package com.chan.retry.service;
 
 import java.util.Collections;
 
