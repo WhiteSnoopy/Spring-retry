@@ -1,10 +1,4 @@
-/**
- * @(#)GuavaRetry.java, 2018/9/6.
- * <p/>
- * Copyright 2018 Netease, Inc. All rights reserved.
- * NETEASE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
-package com.netease.mail.retry.test;
+package com.netease.mail.retry.service;
 
 import java.io.IOException;
 import java.util.concurrent.Callable;
@@ -22,12 +16,11 @@ import com.github.rholder.retry.RetryerBuilder;
 import com.github.rholder.retry.StopStrategies;
 import com.github.rholder.retry.WaitStrategies;
 import com.google.common.base.Function;
-import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
 import com.sun.istack.internal.Nullable;
 
 /**
- * @author chanyun(hzchenyun1@corp.netease.com)
+ * @author chanyun
  */
 public class GuavaRetry {
 

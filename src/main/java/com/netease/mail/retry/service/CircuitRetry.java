@@ -1,10 +1,4 @@
-/**
- * @(#)CircuitRetry.java, 2018/9/5.
- * <p/>
- * Copyright 2018 Netease, Inc. All rights reserved.
- * NETEASE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
-package com.netease.mail.retry.test;
+package com.netease.mail.retry.service;
 
 import org.springframework.retry.RecoveryCallback;
 import org.springframework.retry.RetryCallback;
@@ -16,7 +10,7 @@ import org.springframework.retry.support.DefaultRetryState;
 import org.springframework.retry.support.RetryTemplate;
 
 /**
- * @author chanyun(hzchenyun1@corp.netease.com)
+ * @author chanyun
  */
 public class CircuitRetry {
 

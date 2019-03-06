@@ -1,9 +1,3 @@
-/**
- * @(#)AjaxResult.java, 2018/4/23.
- * <p/>
- * Copyright 2018 Netease, Inc. All rights reserved.
- * NETEASE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
 package com.netease.mail.retry.meta;
 
 import com.netease.mail.retry.constant.ResponseCode;
@@ -11,8 +5,7 @@ import com.netease.mail.retry.constant.ResponseCode;
 /**
  * ajax请求返回结果封装
  *
- * @author 王国云(wangguoyun@corp.netease.com)
- * @Date 2011-7-13
+ * @author chanyun
  */
 public class AjaxResult extends JsonResult {
     /**

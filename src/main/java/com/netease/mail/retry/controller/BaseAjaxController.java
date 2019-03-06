@@ -1,9 +1,3 @@
-/**
- * @(#)BaseAjaxController.java, 2018/4/23.
- * <p/>
- * Copyright 2018 Netease, Inc. All rights reserved.
- * NETEASE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
 package com.netease.mail.retry.controller;
 
 import org.apache.commons.lang.exception.ExceptionUtils;
@@ -94,7 +88,8 @@ public abstract class BaseAjaxController {
     /**
      * 初始化操作失败的AjaxResult
      *
-     * @param errorCode 错误码
+     * @param errorCode
+     *            错误码
      * @return
      */
     public AjaxResult initFailureResult(String errorCode) {
@@ -106,8 +101,10 @@ public abstract class BaseAjaxController {
     /**
      * 初始化操作失败的AjaxResult
      *
-     * @param errorCode 错误码
-     * @param data      数据
+     * @param errorCode
+     *            错误码
+     * @param data
+     *            数据
      * @return
      */
     public AjaxResult initFailureResult(String errorCode, Object data) {
@@ -122,7 +119,8 @@ public abstract class BaseAjaxController {
     /**
      * 初始化包含响应码的AjaxResult
      *
-     * @param result 响应码
+     * @param result
+     *            响应码
      * @return
      */
     public AjaxResult initResult(boolean result) {
@@ -132,8 +130,10 @@ public abstract class BaseAjaxController {
     /**
      * 初始化包含响应码和错误码的AjaxResult
      *
-     * @param result    响应码
-     * @param errorCode 错误码
+     * @param result
+     *            响应码
+     * @param errorCode
+     *            错误码
      * @return
      */
     public AjaxResult initResult(boolean result, String errorCode) {
@@ -143,9 +143,12 @@ public abstract class BaseAjaxController {
     /**
      * 初始化包含响应码，错误码和数据的AjaxResult
      *
-     * @param result    响应码
-     * @param errorCode 错误码
-     * @param data      数据
+     * @param result
+     *            响应码
+     * @param errorCode
+     *            错误码
+     * @param data
+     *            数据
      * @return
      */
     public AjaxResult initResult(boolean result, String errorCode, Object data) {
